@@ -36,7 +36,7 @@ begin
     );
 
     -- print out the message payload
-    dbms_output.put_line(message.text);
+    dbms_output.put_line(message.text_vc);
     
     -- commit the transaction
     commit;
