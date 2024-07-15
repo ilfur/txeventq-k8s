@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: txqords-service
+  namespace: txq-oradb
+spec:
+  gateways:
+  - istio-system/http-istio-gateway
+  hosts:
+  - 'txqords.141.147.33.9.nip.io'
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: ords-sidb23c
+        port:
+          number: 8080
