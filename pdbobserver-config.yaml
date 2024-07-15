@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: toml-config
-  namespace: saga-oradb
+  namespace: txq-oradb
 data:
   teq.toml: |-
     [[metric]]
