@@ -14,6 +14,6 @@ spec:
         prefix: /
     route:
     - destination:
-        host: ords-sidb23c
+        host: ords-txq
         port:
           number: 8080
