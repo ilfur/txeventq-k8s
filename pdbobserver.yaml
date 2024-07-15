@@ -1,8 +1,8 @@
 apiVersion: observability.oracle.com/v1alpha1
 kind: DatabaseObserver
 metadata:
-  name: pdb1-observer
-  namespace: saga-oradb
+  name: txqpdb-observer
+  namespace: txq-oradb
 spec:
   database:
     dbUser:
@@ -31,6 +31,6 @@ spec:
     port: metrics
     labels:
       cdb: ai23-remote-cdb
-      pdb: sagapdb1
+      pdb: txqpdb
 
   replicas: 1
