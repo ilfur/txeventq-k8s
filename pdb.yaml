@@ -17,7 +17,7 @@ spec:
       key: "sysadmin_user"
   adminPwd:
     secret:
-      secretName: "txqdb-secret"
+      secretName: "txqpdb-secret"
       key: "sysadmin_pwd"
   webServerPwd:
     secret:
