@@ -13,11 +13,11 @@ spec:
   pdbName: "txqpdb"
   adminName:
     secret:
-      secretName: "aipdb-secret"
+      secretName: "txqpdb-secret"
       key: "sysadmin_user"
   adminPwd:
     secret:
-      secretName: "aipdb-secret"
+      secretName: "txqdb-secret"
       key: "sysadmin_pwd"
   webServerPwd:
     secret:
