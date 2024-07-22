@@ -25,7 +25,7 @@ begin
 
     -- enqueue the message
     dbms_aq.enqueue(
-        queue_name           => 'my_teq',           
+        queue_name           => 'MY_TEQ',           
         enqueue_options      => enqueue_options,       
         message_properties   => message_properties,     
         payload              => message,               
