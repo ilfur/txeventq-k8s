@@ -30,7 +30,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: oracle_pwd
-                  name: db-admin-secret
+                  name: ords-secret
           image: 'fra.ocir.io/frul1g8cgfam/database/aidemo:23.4'
           imagePullPolicy: IfNotPresent
           name: dbhelper
@@ -52,7 +52,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: oracle_pwd
-                  name: db-admin-secret
+                  name: ords-secret
           image: 'fra.ocir.io/frul1g8cgfam/database/aidemo:23.4'
           imagePullPolicy: IfNotPresent
           name: dbcheck
