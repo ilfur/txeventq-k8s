@@ -26,6 +26,11 @@ begin
 end;
 /
 
+begin
+    dbms_aqadm.create_database_kafka_topic( topicname=> 'TXEQ', partition_num=>5, retentiontime => 7*24*3600);
+end;
+/
+    
 --
 --  You may also want to create a subscriber for the TEQ, pub/sub topics normally deliver 
 --  messages only when the consumer/subscriber is present. 
