@@ -10,11 +10,11 @@ data:
     alter user pdbadmin quota unlimited on system;
     GRANT EXECUTE on DBMS_AQ to pdbadmin;
     GRANT EXECUTE on DBMS_AQADM to pdbadmin;
-    GRANT SELECT on GV_$SESSION to pdbadmin;
-    GRANT SELECT on V_$SESSION to pdbadmin;
-    GRANT SELECT on GV_$INSTANCE to pdbadmin;
-    GRANT SELECT on GV_$LISTENER_NETWORK to pdbadmin;
-    GRANT SELECT on GV_$PDBS to pdbadmin;
+    GRANT SELECT on GV_\$SESSION to pdbadmin;
+    GRANT SELECT on V_\$SESSION to pdbadmin;
+    GRANT SELECT on GV_\$INSTANCE to pdbadmin;
+    GRANT SELECT on GV_\$LISTENER_NETWORK to pdbadmin;
+    GRANT SELECT on GV_\$PDBS to pdbadmin;
     GRANT SELECT on USER_QUEUE_PARTITION_ASSIGNMENT_TABLE to pdbadmin;    
     exec DBMS_AQADM.GRANT_PRIV_FOR_RM_PLAN('PDBADMIN');
     exit; 
