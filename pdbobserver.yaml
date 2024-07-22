@@ -7,15 +7,15 @@ spec:
   database:
     dbUser:
       key: "oracle_user"
-      secret: aipdb-secret
+      secret: txqpdb-secret
 
     dbPassword:
       key: "oracle_pwd"
-      secret: aipdb-secret
+      secret: txqpdb-secret
 
     dbConnectionString:
       key: "connection1"
-      secret: aipdb-secret
+      secret: txqpdb-secret
 
 
   exporter:
