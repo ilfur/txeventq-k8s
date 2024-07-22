@@ -28,7 +28,7 @@ begin
 
     -- perform the dequeue
     dbms_aq.dequeue(
-        queue_name         => 'my_teq',
+        queue_name         => 'MY_TEQ',
         dequeue_options    => dequeue_options,
         message_properties => message_properties,
         payload            => message,
