@@ -14,14 +14,14 @@ begin
     -- create the TEQ
     dbms_aqadm.create_transactional_event_queue(
         -- note, in Oracle 19c this is called create_sharded_queue() but has the same parameters
-        queue_name         => 'my_teq',
+        queue_name         => 'MY_TEQ',
         -- when mutiple_consumers is true, this will create a pub/sub "topic" - the default is false
         multiple_consumers => true
     );
     
     -- start the TEQ
     dbms_aqadm.start_queue(
-        queue_name         => 'my_teq'
+        queue_name         => 'MY_TEQ'
     ); 
 end;
 /
@@ -35,7 +35,7 @@ declare
     subscriber sys.aq$_agent;
 begin
     dbms_aqadm.add_subscriber(
-        queue_name => 'my_teq',
+        queue_name => 'MY_TEQ',
         subscriber => sys.aq$_agent(
             'my_subscriber',    -- the subscriber name
             null,               -- address, only used for notifications
