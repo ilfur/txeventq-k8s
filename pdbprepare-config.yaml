@@ -9,6 +9,7 @@ data:
     sqlplus sys/$DB_PASSWORD@$DB_HOST:1521/$DB_SERVICE as sysdba << EOF 
     alter user pdbadmin quota unlimited on system;
     GRANT EXECUTE on DBMS_AQ to pdbadmin;
+    GRANT EXECUTE on DBMS_AQIN to pdbadmin;
     GRANT EXECUTE on DBMS_AQADM to pdbadmin;
     GRANT SELECT on GV_\$SESSION to pdbadmin;
     GRANT SELECT on V_\$SESSION to pdbadmin;
